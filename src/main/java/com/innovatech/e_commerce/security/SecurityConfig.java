@@ -15,8 +15,8 @@ public class SecurityConfig {
         return http
             .csrf(csrf -> csrf.disable()) // Desactivar CSRF
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/pedidos").permitAll() // Permitir acceso sin autenticación a /api/pedidos
-                .requestMatchers("/api/reservas").permitAll() // Permitir acceso sin autenticación a /api/reservas
+                .requestMatchers("/api/pedidos/**").permitAll() // Permitir todas las rutas que comiencen con /api/pedidos
+                .requestMatchers("/api/reservas/**").permitAll() // Permitir todas las rutas que comiencen con /api/reservas
                 .anyRequest().authenticated() // Requiere autenticación para el resto
             )
             .build();
