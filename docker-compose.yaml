@@ -9,3 +9,4 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: prod  # Activar el perfil de producción (o test)
     restart: always
+
