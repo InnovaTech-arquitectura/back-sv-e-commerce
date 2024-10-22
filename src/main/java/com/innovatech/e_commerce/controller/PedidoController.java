@@ -1,12 +1,13 @@
 package com.innovatech.e_commerce.controller;
 
-import com.innovatech.e_commerce.entity.Pedido;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.innovatech.e_commerce.entity.Pedido;
 
 @RestController
 public class PedidoController {
@@ -22,6 +23,7 @@ public class PedidoController {
         pedidos.add(new Pedido(5L, "SEBO", 100.0, "Aceptado", "Alvaro Uribe", "Presidente", "Colombia"));
 
     }
+
 
     @GetMapping("/api/pedidos")
     public List<Pedido> getAllPedidos() {
