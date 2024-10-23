@@ -1,6 +1,6 @@
 package com.innovatech.e_commerce.entity;
 
-public class Course {
+public class Capacitacion {
     private Long id;
     private String title;
     private String date;
@@ -9,7 +9,7 @@ public class Course {
     private String link;
     private double score;  
 
-    public Course(Long id, String title, String date, String modality, String description, String link, double score) {
+    public Capacitacion(Long id, String title, String date, String modality, String description, String link, double score) {
         this.id = id;
         this.title = title;
         this.date = date;
@@ -19,7 +19,7 @@ public class Course {
         this.score = score; 
     }
 
-    // Getters and Setters
+    
     public Long getId() {
         return id;
     }
