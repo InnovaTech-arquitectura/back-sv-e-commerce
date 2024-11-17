@@ -18,6 +18,8 @@ public class SecurityConfig {
                 .requestMatchers("/api/pedidos/**").permitAll() // Permitir todas las rutas que comiencen con /api/pedidos
                 .requestMatchers("/api/reservas/**").permitAll() // Permitir todas las rutas que comiencen con /api/reservas
                 .requestMatchers("/api/tienda/**").permitAll() // Permitir todas las rutas que comiencen con /api/tienda
+                .requestMatchers("/api/carrito/**").permitAll()
+                .requestMatchers("/api/bazares/**").permitAll() // Permitir todas las rutas que comiencen con /api/carrito
                 .anyRequest().authenticated() // Requiere autenticación para el resto
             )
             .build();
