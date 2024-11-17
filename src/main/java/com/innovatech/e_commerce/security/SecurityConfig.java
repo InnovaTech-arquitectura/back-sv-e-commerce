@@ -13,14 +13,15 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
-            .csrf(csrf -> csrf.disable()) // Desactivar CSRF
+            .csrf(csrf -> csrf.disable()) 
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/pedidos/**").permitAll() // Permitir todas las rutas que comiencen con /api/pedidos
-                .requestMatchers("/api/reservas/**").permitAll() // Permitir todas las rutas que comiencen con /api/reservas
-                .requestMatchers("/api/tienda/**").permitAll() // Permitir todas las rutas que comiencen con /api/tienda
+                .requestMatchers("/api/pedidos/**").permitAll() 
+                .requestMatchers("/api/reservas/**").permitAll() 
+                .requestMatchers("/api/tienda/**").permitAll() 
                 .requestMatchers("/api/carrito/**").permitAll()
-                .requestMatchers("/api/bazares/**").permitAll() // Permitir todas las rutas que comiencen con /api/carrito
-                .anyRequest().authenticated() // Requiere autenticación para el resto
+                .requestMatchers("/api/bazares/**").permitAll()
+                .requestMatchers("/api/courses/**").permitAll() 
+                .anyRequest().authenticated() 
             )
             .build();
     }
