@@ -16,11 +16,11 @@ public class PedidoController {
 
     public PedidoController() {
         // Datos mockeados
-        pedidos.add(new Pedido(1L, "ABCD", 150.0, "Aceptado", "Calle Falsa 123", "Antioquia", "Medellín"));
-        pedidos.add(new Pedido(2L, "XYZ", 200.0, "En camino", "Avenida Siempre Viva 742", "Cundinamarca", "Bogotá"));
-        pedidos.add(new Pedido(3L, "QWERTY", 300.0, "Entregado", "Calle de la Rosa", "Santander", "Bucaramanga"));
-        pedidos.add(new Pedido(4L, "MNOP", 120.0, "Pendiente", "Carrera 45", "Antioquia", "Medellín"));
-        pedidos.add(new Pedido(5L, "SEBO", 100.0, "Aceptado", "Alvaro Uribe", "Presidente", "Colombia"));
+        pedidos.add(new Pedido(1, "ABCD", 150.0, "Aceptado", "Calle Falsa 123", "Antioquia", "Medellín"));
+        pedidos.add(new Pedido(2, "XYZ", 200.0, "En camino", "Avenida Siempre Viva 742", "Cundinamarca", "Bogotá"));
+        pedidos.add(new Pedido(3, "QWERTY", 300.0, "Entregado", "Calle de la Rosa", "Santander", "Bucaramanga"));
+        pedidos.add(new Pedido(4, "MNOP", 120.0, "Pendiente", "Carrera 45", "Antioquia", "Medellín"));
+        pedidos.add(new Pedido(5, "SEBO", 100.0, "Aceptado", "Alvaro Uribe", "Presidente", "Colombia"));
 
     }
 
